@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+<!-- load wagtailcore_tags by adding this: -->
+{% load wagtailcore_tags %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+<!-- replace everything below with: -->
+{% block content %}
+<button class="button is-primary">Hello Bulma</button>
+    {{ page.body|richtext }}
+{% endblock %}
+
+
+
+{% comment %} 
+{% extends "base.html" %}
+{% load static %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+
+{% include 'home/welcome_page.html' %}
+
+{% endblock content %}
+{% endcomment %}
+
+
