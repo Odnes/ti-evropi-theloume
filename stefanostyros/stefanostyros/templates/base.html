@@ -17,6 +17,7 @@
         <meta name="description" content="{{ page.search_description }}" />
         {% endif %}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
         {# Force all links in the live preview panel to be opened in a new tab #}
         {% if request.in_preview_panel %}
@@ -24,11 +25,23 @@
         {% endif %}
 
         {# Global stylesheets #}
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-        <link rel="stylesheet" type="text/css" href="{% static 'css/stefanostyros.css' %}">
-        {% block extra_css %}
+        <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.4/css/bulma.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../static/css/tievropi.css" />
+       {% block extra_css %}
         {# Override this in templates to add extra stylesheets #}
         {% endblock %}
+
+        <link rel="icon" type="image/png" href="favicon.png" />
+
+        <!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '725245');
+</script>
+<!-- End MailerLite Universal -->
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
@@ -37,7 +50,7 @@
         {% block content %}{% endblock %}
 
         {# Global javascript #}
-        <script type="text/javascript" src="{% static 'js/stefanostyros.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/tievropi.js' %}"></script>
 
         {% block extra_js %}
         {# Override this in templates to add extra javascript #}

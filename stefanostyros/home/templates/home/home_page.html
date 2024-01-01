@@ -1,37 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Τι Ευρώπη θέλουμε;</title>
-    <!-- Bulma Version 0.9.4-->
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.4/css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../static/css/showcase.css" />
-    <script
-      src="https://kit.fontawesome.com/2828f7885a.js"
-      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="icon" type="image/png" href="favicon.png" />
-<script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '722691');
-</script>
-  </head>
 
-  <body>
-    <!-- Begin Preloader ... ignore preloader
-    <div class="preloader-wrapper">
-      <div class="preloader">
-        <img src="img/preloader.gif" alt="" />
-      </div>
-    </div> -->
-    <!-- End Preloader-->
-    <!-- Begin Scroll Up Button -->
+{% extends "base.html" %}
+
+{% load wagtailcore_tags %}
+
+{% block body_class %}template-blogindexpage{% endblock %}
+
+{% block content %}
 
     <form action="#home">
       <button id="toTop" title="Επιστροφή στην κορυφή">
@@ -73,13 +48,13 @@
                 </a>
               </div>
               <div class="navbar-item">
-                <a class="navbar-item" href="#services">
-                  Media
+                <a class="navbar-item" href="#news">
+                  Νέα
                 </a>
               </div>
               <div class="navbar-item">
-                <a class="navbar-item" href="#support-me">
-                  Υποστήριξε
+                <a class="navbar-item" href="#newsletter">
+                  Newsletter
                 </a>
               </div>
            </div>
@@ -89,11 +64,119 @@
         <!-- Begin Hero Content-->
         <div class="hero-body">
           <div class="container">
-              <img width="400"
+
+          <svg
+   width="93mm"
+   height="63mm"
+   viewBox="0 0 93 63"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1" /><g
+     id="layer1"><text
+       xml:space="preserve"
+       style="font-size:16.9333px;fill:#ffffff;stroke-width:2.165;stroke-dasharray:none"
+       x="1.7370365"
+       y="13.936096"
+       id="text2"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:16.9333px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Medium';fill:#ffffff;fill-opacity:1;stroke-width:2.165;stroke-dasharray:none"
+         x="1.7370365"
+         y="13.936096"
+         id="tspan5">ΤΙ</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:16.9333px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Medium';fill:#ffffff;fill-opacity:1;stroke-width:2.165;stroke-dasharray:none"
+         x="1.7370365"
+         y="35.910889"
+         id="tspan7">ΕΥΡΩΠΗ</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:16.9333px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Medium';fill:#ffffff;fill-opacity:1;stroke-width:2.165;stroke-dasharray:none"
+         x="1.7370365"
+         y="57.885681"
+         id="tspan8">ΘΕΛ    ΥΜΕ;</tspan></text></g><g
+     id="g426"
+     transform="matrix(0.05364747,0,0,0.05364747,35.931074,43.747967)"
+     style="fill:#ffffff"><g
+       id="s"
+       transform="translate(150,30)"
+       fill="#ffcc00"
+       style="fill:#ffffff"><g
+         id="c"
+         style="fill:#ffffff"><path
+           id="t"
+           d="M 0,-20 V 0 h 10"
+           transform="rotate(18,0,-20)"
+           style="fill:#ffffff" /><use
+           xlink:href="#t"
+           transform="scale(-1,1)"
+           id="use1"
+           style="fill:#ffffff" /></g><use
+         xlink:href="#c"
+         transform="matrix(0.37853567,1.165013,-1.165013,0.37853567,4.27926,1.3904121)"
+         id="use2"
+         style="fill:#ffffff" /><use
+         xlink:href="#c"
+         transform="matrix(-0.99101925,0.72001763,-0.72001763,-0.99101925,4.27926,1.3904121)"
+         id="use3"
+         style="fill:#ffffff" /><use
+         xlink:href="#c"
+         transform="matrix(-0.99101925,-0.72001763,0.72001763,-0.99101925,4.27926,1.3904121)"
+         id="use4"
+         style="fill:#ffffff" /><use
+         xlink:href="#c"
+         transform="matrix(0.37853567,-1.165013,1.165013,0.37853567,4.27926,1.3904121)"
+         id="use5"
+         style="fill:#ffffff" /></g><use
+       xlink:href="#s"
+       transform="translate(60,16.076952)"
+       id="use6"
+       style="fill:#ffffff" /><use
+       xlink:href="#s"
+       transform="translate(103.92305,60)"
+       id="use7"
+       style="fill:#ffffff" /><use
+       xlink:href="#s"
+       transform="translate(120,120)"
+       id="use8"
+       style="fill:#ffffff" /><use
+       xlink:href="#s"
+       transform="translate(103.92305,180)"
+       id="use9"
+       style="fill:#ffffff" /><use
+       xlink:href="#s"
+       transform="translate(60,223.92305)"
+       id="use10"
+       style="fill:#ffffff" /><use
+       xlink:href="#s"
+       transform="translate(0,240)"
+       id="use11"
+       style="fill:#ffffff" /><use
+       xlink:href="#s"
+       transform="translate(-60,223.92305)"
+       id="use12"
+       style="fill:#ffffff" /><use
+       xlink:href="#s"
+       transform="translate(-103.92305,180)"
+       id="use13"
+       style="fill:#ffffff" /><use
+       xlink:href="#s"
+       transform="translate(-120,120)"
+       id="use14"
+       style="fill:#ffffff" /><use
+       xlink:href="#s"
+       transform="translate(-103.92305,60)"
+       id="use15"
+       style="fill:#ffffff" /><use
+       xlink:href="#s"
+       transform="translate(-60,16.076952)"
+       id="use16"
+       style="fill:#ffffff" /></g></svg>
+  
+            
+          <!--    <img width="400"
                    src="./../../../media/images/ti_europi_theloume.max-800x600.png"
                    alt="Τι Ευρώπη θέλουμε;"></img>
-              <!--
-            <h1 class="subtitle">Hey there, I'm</h1>
+           <h1 class="subtitle">Hey there, I'm</h1>
             <h2 class="title">Ashley</h2>
             <h1 class="subtitle profession">A UI/UX Designer</h1>
               -->
@@ -112,15 +195,18 @@
                   <li>
                     <a href="#about-me">Ποιος είμαι</a>
                   </li>
+<!--                  
                   <li>
                     <a href="#european-programme">Ευρωπαϊκό Πρόγραμμα</a>
                   </li>
-                  <li>
-                    <a href="#media">media</a>
+-->
+                 <li>
+                    <a href="#news">νέα</a>
                   </li>
                   <li>
-                    <a href="#support-me">Υποστήριξε</a>
+                    <a href="#newsletter">newsletter</a>
                   </li>
+ 
                </ul>
               </div>
            </div>
@@ -146,16 +232,16 @@
               data-aos="fade-right"
             >
               <p id="whoami-title" class="is-larger">
-              <strong>
-                  Φυσικός & Οικονομολόγος<br/>
-                  Ερευνητής θεμάτων Εργασίας - Τεχνολογίας<br/>
-                  Συντονιστής τομέων πολιτικής του Βολτ
-              </strong>
+              <h3>
+                  Ερευνητής σε θέματα εργασίας και νέων τεχνολογιών στο πανεπιστήμιο VU Amsterdam.<br/>
+                  Συντονιστής των Τομέων Πολιτικής του Βολτ. 
+              </h3>
               </p>
-              <br />
               <p id="whoami-body">
-Φυσικός & Οικονομολόγος Ερευνητής θεμάτων Εργασίας-Τεχνολογίας Συντονιστής τομέων πολιτικής του Βολτ
-Φυσικός & Οικονομολόγος Ερευνητής θεμάτων Εργασίας-Τεχνολογίας Συντονιστής τομέων πολιτικής του Βολτ
+                  Ονομάζομαι <strong>Στέφανος Τύρος</strong>. Γεννημένος στην Αθήνα και μεγαλωμένος στην Καλαμάτα, είμαι παιδί της <strong>γενιάς της κρίσης.</strong>
+                  Εμείς, που ξεκινήσαμε σπουδές και εργασία την περίοδο που βλέπαμε την Ελλάδα να καταρρέει και την Ευρώπη να μας απογοητεύει.<br/><br/>
+                  Αυτό με έσπρωξε να περάσω από τις θετικές επιστήμες στα οικονομικά και την εφαρμογή πολιτικών. Τώρα θέλω να ανοίξω <strong>μία συζήτηση:</strong><br/><br/>
+                  <strong>Τι Ευρώπη</strong> και <strong>Τι Ελλάδα</strong> Θέλουμε. Και πως θα φτάσουμε ως εκεί. 
               </p>
               <br />
               <div class="is-divider"></div>
@@ -175,9 +261,41 @@
                   </p>
                 </div>
               </div>
+
+<div class="column">
+<!-- no idea where these classes are coming from--->
+                <a href="https://www.facebook.com/StefanosTyrosPage">
+                <img class="sm-icon" style="height:2.92em;margin-bottom:0.85em;"
+                   src="./../../static/icons/facebook.svg"
+                   alt="facebook"></img>
+
+                <a href="https://www.instagram.com/stefanostyros">
+                <img class="sm-icon"
+                   src="./../../static/icons/instagram.svg"
+                   alt="instagram"></img>
+                </a>
+                <a href="https://twitter.com/StefanosTyros">
+                <img class="sm-icon"
+                   src="./../../static/icons/twitter.svg"
+                   alt="twitter"></img>
+                </a>
+                <a href="https://www.tiktok.com/@stefanostyros">
+                <img class="sm-icon"
+                   src="./../../static/icons/tiktok.svg"
+                   alt="tiktok"></img>
+                </a>
+                <a href="https://discord.gg/Sg32E952">
+                <img class="sm-icon"
+                   src="./../../static/icons/discord.svg"
+                   alt="discord"></img>
+                </a>
+</div>
+              
             </div>
             <div style="text-align: center;" class="column is-6 right-image " data-aos="fade-left">
-<iframe style="display: inline-block;" width="340" height="230" src="https://www.youtube.com/embed/SZwY1cwCu1g" title="Στέφανος Τύρος, μέλος του Πολιτικού Συμβουλίου του Βολτ, Ιδρυτικό Συνέδριο Βολτ, 11 Μαρτίου 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="849" height="480" src="https://www.youtube.com/embed/XP_vipNKNhw" title="Τι Ευρώπη Θέλουμε;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<!-- <iframe style="display: inline-block;" width="340" height="230" src="https://www.youtube.com/embed/SZwY1cwCu1g" title="Στέφανος Τύρος, μέλος του Πολιτικού Συμβουλίου του Βολτ, Ιδρυτικό Συνέδριο Βολτ, 11 Μαρτίου 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 <!--              <img
                 class="is-rounded"
                 src="https://picsum.photos/id/366/600/375"
@@ -190,8 +308,80 @@
       </div>
       <!-- End About Me Content -->
 
-      <!-- removing resume makes the section higher for some reason -->
-      <div class="section-dark" id="support-me">
+<!-- Start News Content-->
+      <div class="section-dark my-work" id="news">
+        <div class="container">
+          <div
+            class="columns is-multiline"
+            data-aos="fade-in"
+            data-aos-easing="linear"
+          >
+            <div class="column is-12">
+              <h1 class="title has-text-centered section-title">Τελευταια Νεα</h1>
+            </div>
+<div class="column is-6">
+              <a href="https://www.athensvoice.gr/epikairotita/politiki-oikonomia/828391/neo-forologiko-ti-forologia-theloume/">
+                  <h4>Νέο φορολογικό: Τι φορολογία θέλουμε;</h4>
+                <figure
+                  class="image is-2by1 work-item"
+                  style="background-image:
+                  url('./../../../media/original_images/forologiko.webp');
+                  background-position: center"
+                ></figure> 
+              </a>
+                <p class="metadata">Πέμπτη 14-12-23, Athens Voice</p>
+                <p>«Ο βασικός στόχος της οποιασδήποτε μεταρρύθμισης πρέπει να είναι
+                   η μείωση της φορολογίας και των ασφαλιστικών εισφορών για τους μισθωτούς εργαζόμενους» [...]</p> 
+            </div>
+
+<div class="column is-6">
+              <div>
+                <h4>Τι Ευρώπη θέλουμε; (βίντεο)</h4>
+               <iframe width="849" height="480" src="https://www.youtube.com/embed/XP_vipNKNhw" title="Τι Ευρώπη Θέλουμε;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p class="metadata">Παρασκευή 15-12-23</p>
+              </div>
+            </div>
+
+<div class="column is-6">
+              <a href="https://www.tovima.gr/2023/12/01/opinions/ti-eyropi-theloume/">
+                  <h4>Τι Ευρώπη θέλουμε;</h4>
+                  <br class="kludge">
+                <figure
+                  class="image is-2by1 work-item"
+                  style="background-image:
+                  url('./../../../media/images/ti_europi_theloume.max-800x600.png');
+                  background-position: center"
+                ></figure> 
+              </a>
+                <p class="metadata">Τρίτη 05-12-23, Το Βήμα</p>
+                <p>H Ελλάδα μόνη της δεν έχει τη δυνατότητα να επηρεάζει καθοριστικά τις παγκόσμιες εξελίξεις.
+                   Γι’ αυτό και είναι αναγκαία η θέση της σε μια ισχυρή Ευρώπη. Ταυτόχρονα, όμως, δε θα μπορέσει 
+                   να τις επηρεάσει, αν η φωνή της δεν ακούγεται εντός της Ευρώπης. Γι’ αυτό και χρειαζόμαστε μια δημοκρατική Ευρώπη.[...]</p> 
+            </div>
+
+<div class="column is-6">
+              <a href="https://www.efsyn.gr/stiles/apopseis/412758_pos-i-apotyhia-tis-akrodexias-se-mia-hora-ginetai-i-epityhia-tis-se-alli">
+                  <h4>Πώς η αποτυχία της ακροδεξιάς σε μία χώρα γίνεται η επιτυχία της σε άλλη</h4>
+                <figure
+                  class="image is-2by1 work-item"
+                  style="background-image:
+                  url('./../../../media/original_images/wilders.webp');
+                  background-position: center"
+                ></figure> 
+              </a>
+                <p class="metadata">Παρασκευή 24-11-23, Εφημερίδα των Συντακτών</p>
+                <p>Το Brexit από μία μεγάλη ευκαιρία για την Ολλανδία κατέληξε να μεγεθύνει το στεγαστικό της πρόβλημα λόγω της ολιγωρίας της προηγούμενης κυβέρνησης. Και αυτό χρησιμοποίησε περίτεχνα η ακροδεξιά της. [...]</p> 
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+      <!-- End News Content -->
+
+<!-- Begin Newsletter Form Section-->
+      <div class="section-dark" id="newsletter">
         <div class="container">
           <div
             class="columns is-multiline"
@@ -200,15 +390,15 @@
           >
           <div class="column is-12">
               <h1 class="title has-text-centered section-title">
-                Υποστηριξε
+                Εγγραφη στο Newsletter
               </h1>
               <div class="columns is-12">
                 <div
-                class="column is-6 has-text-centered"
+                class="column has-text-centered"
                 data-aos="fade-in"
                 data-aos-easing="linear"
                 >
-<div class="ml-embedded" data-form="KIdoxH"></div>
+<div class="ml-embedded" data-form="yJqBfT"></div>
                 </div> 
 
 <!--
@@ -234,88 +424,20 @@
                 </div>
 -->
 
-                <div
-                class="column is-6 "
-                data-aos="fade-in"
-                data-aos-easing="linear"
-                >
-                <h4>
-                    Social Media
-                </h4>
-                <p>
-                Ακολούθησε στα social media   
-                </p>
-                    <br>
-                <hr />
-                <!-- no idea where these classes are coming from--->
-                <a href="https://www.facebook.com/StefanosTyrosPage">
-                <img class="sm-icon" style="height:3.15em;margin-bottom:0.54em;"
-                   src="./../../static/icons/facebook.svg"
-                   alt="facebook"></img>
-
-                <a href="https://www.instagram.com/stefanostyros">
-                <img class="sm-icon"
-                   src="./../../static/icons/instagram.svg"
-                   alt="instagram"></img>
-                </a>
-                <a href="https://twitter.com/StefanosTyros">
-                <img class="sm-icon"
-                   src="./../../static/icons/twitter.svg"
-                   alt="twitter"></img>
-                </a>
-                <a href="https://www.tiktok.com/@stefanostyros">
-                <img class="sm-icon"
-                   src="./../../static/icons/tiktok.svg"
-                   alt="tiktok"></img>
-                </a>
-                <a href="https://discord.gg/Sg32E952">
-                <img class="sm-icon"
-                   src="./../../static/icons/discord.svg"
-                   alt="discord"></img>
-                </a>
-                </div>
               </div>
          </div>
         </div>
       </div>
-      <!-- Begin Skills Content -->
-      <div class="section-light skills" id="media">
-        <div class="container">
-          <div class="columns is-multiline">
-            <div class="column is-12 about-me">
-              <h1 class="title has-text-centered section-title">Media</h1>
-            </div>
-            <div
-              class="column is-6"
-              style="text-align: center;"
-              data-aos="fade-in"
-              data-aos-easing="linear"
-            >
-              <iframe src="https://www.youtube.com/embed/fOAgmZxr73c" title="Η Ευρώπη είναι το όνειρο μας 🇪🇺" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
-            </div>
-            <div
-              class="column is-6"
-              data-aos="fade-in"
-              style="text-align: center;"
-              data-aos-easing="linear"
-            >
-               <iframe src="https://www.youtube.com/embed/4Zk4CcxGRb0" title="Η Συμπρόεδρος του Volt Europa για το Βολτ Ελλάδας" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div
-              class="column is-6"
-              style="text-align: center;"
-              data-aos="fade-in"
-              data-aos-easing="linear"
-            >
-              <iframe src="https://www.youtube.com/embed/fOAgmZxr73c" title="Η Ευρώπη είναι το όνειρο μας 🇪🇺" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
-            </div>
- 
-          </div>
-        </div>
-      </div>
-      <!-- End Skills Content -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+    </div>
+
+<!-- End Newsletter Form Section -->
+
+
 
       <!-- Begin Services Content -->
+<!--      
       <div class="section-color services" id="european-programme">
         <div class="container">
           <div class="columns is-multiline">
@@ -339,7 +461,15 @@
                 data-aos="fade-in"
                 data-aos-easing="linear"
               >
-                <i class="fad fa-meteor fa-3x"></i>
+                
+                <svg xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 88.51 86.65">
+                 <defs><style>.cls-1{fill:#dc080f;}</style></defs>
+                 <g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1">
+                 <path class="cls-1" d="M47,58.63A13.52,13.52,0,0,1,33.47,45.12H30.19A16.79,16.79,0,1,0,47,28.33v3.28a13.51,13.51,0,1,1,0,27Z"/>
+                 <path class="cls-1" d="M88.51,54.58V35.67l-12-1.08a30.69,30.69,0,0,0-1.2-2.91L83,22.45,69.66,9.08l-9.24,7.71q-1.41-.66-2.91-1.2l-1.07-12H47V6.88h6.46l1,11.16,1,.33a28.28,28.28,0,0,1,4.42,1.82l1,.51,8.59-7.18,9.13,9.13-7.18,8.59.5,1a27.76,27.76,0,0,1,1.83,4.42l.32,1,11.17,1V51.58l-11.17,1-.32,1A28.15,28.15,0,0,1,71.91,58l-.5,1,7.18,8.59-9.13,9.13-8.59-7.18-1,.5a27.19,27.19,0,0,1-4.42,1.82l-1,.33-1,11.17H40.53l-1-11.17-1-.33a27.72,27.72,0,0,1-4.42-1.82l-1-.5-8.59,7.18L15.38,67.6,22.56,59l-.5-1a27.76,27.76,0,0,1-1.83-4.42l-.33-1-11.16-1V45.12H5.46v9.46l12,1.07a31.1,31.1,0,0,0,1.19,2.91L10.94,67.8,24.31,81.17l9.23-7.72a30.69,30.69,0,0,0,2.91,1.2l1.08,12H56.44l1.07-12a28.66,28.66,0,0,0,2.91-1.2l9.24,7.72L83,67.8l-7.72-9.24a28.66,28.66,0,0,0,1.2-2.91Z"/><polygon class="cls-1" points="30.28 12.95 34.49 9.9 38.7 12.95 37.09 8.03 41.38 4.98 36.1 4.98 34.49 0 32.88 4.98 27.6 4.98 31.88 8.03 30.28 12.95"/><polygon class="cls-1" points="12.11 21.38 16.32 18.34 20.52 21.38 18.92 16.46 23.2 13.41 17.93 13.41 16.31 8.42 14.7 13.41 9.42 13.41 13.71 16.46 12.11 21.38"/><polygon class="cls-1" points="6.89 35.51 11.1 38.55 9.5 33.63 13.78 30.58 8.5 30.58 6.89 25.6 5.28 30.59 0 30.58 4.28 33.63 2.68 38.55 6.89 35.51"/>
+                 </g></g>
+                </svg>
                 <hr />
                 <h2>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -413,52 +543,8 @@
           </div>
         </div>
       </div>
+-->
       <!-- End Services Content -->
-      <!-- Begin Work Content -->
-      <div class="section-dark my-work" id="my-work">
-        <div class="container">
-          <div
-            class="columns is-multiline"
-            data-aos="fade-in"
-            data-aos-easing="linear"
-          >
-            <div class="column is-12">
-              <h1 class="title has-text-centered section-title">Παλαιοτερα Newsletters</h1>
-            </div>
-            <div class="column is-6">
-              <a href="#">
-                  <h4>Τι Ευρώπη θέλουμε;</h4>
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image:
-                  url('./../../../media/images/ti_europi_theloume.max-800x600.png');
-                  background-position: center"
-                ></figure> 
-              </a>
-                <p>Σάββατο 02-12-23</p>
-                <p>Η κρίση χρέους, το προσφυγικό, η κλιματική αλλαγή, η άμυνα και η
-                τεχνητή νοημοσύνη είναι μερικές μόνο από τις παγκόσμιες
-                προκλήσεις που έχουμε μπροστά μας. Προκλήσεις που η Ελλάδα δεν
-                μπορεί να αντιμετωπίσει παρά μόνο ως μέλος μιας δημοκρατικής και
-                ισχυρής Ευρώπης. [...] </p> 
-            </div>
-            <div class="column is-6">
-              <a href="#">
-                  <h4>Παλιότερο άρθρο</h4>
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=10');"
-                ></figure>
-             </a>
-                <p>Τρίτη 05-12-23</p>
-                <p>Παλιότερο άρθρο Παλιότερο άρθρο Παλιότερο άρθρο Παλιότερο
-                άρθρο Παλιότερο άρθρο Παλιότερο άρθρο Παλιότερο άρθρο Παλιότερο
-                άρθρο</p> 
-             </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Work Content -->
       <!-- Begin Contact Content -->
 <!--
       <div class="section-light contact" id="contact">
@@ -561,6 +647,28 @@
         duration: 800,
       });
     </script>
-  </body>
-</html>
+ 
+
+{% endblock %}
+<!--    <h1>{{ page.title }}</h1>
+
+    <div class="intro">{{ page.intro|richtext }}</div>
+    <p>{{page.body|richtext}}</p>
+    {% for post in page.get_children %}
+        <h2><a href="{% pageurl post %}">{{ post.title }}</a></h2>
+        {{ post.specific.intro }}
+        {{ post.specific.body|richtext }}
+    {% endfor %}
+-->
+  
+
+    <!-- Begin Preloader ... ignore preloader
+    <div class="preloader-wrapper">
+      <div class="preloader">
+        <img src="img/preloader.gif" alt="" />
+      </div>
+    </div> -->
+    <!-- End Preloader-->
+    <!-- Begin Scroll Up Button -->
+
  
